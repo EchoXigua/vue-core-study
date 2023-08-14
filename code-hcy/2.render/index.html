@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./render.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    123
+  </div>
+
+</body>
+<script>
+  const app = document.querySelector('#app')
+  const vnode = {
+    tag: 'p',
+    props: {
+      onClick: () => alert(123),
+    },
+    children: 'alert'
+  }
+  render(vnode, app)
+
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box:has(.required) {
+      color: pink;
+    }
+
+    .sec span:nth-of-type(1) {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box t">
+    parent
+    <div class="con required">con123</div>
+  </div>
+  <br>
+  <div class="box">
+    parent
+
+    <div class="con">con33333333</div>
+    <p>123</p>
+  </div>
+  <br>
+
+
+  <div class="sec">
+    <p>1111</p>
+    <span class="sp">1</span>
+    <span class="sp">2</span>
+    <span class="sp">3</span>
+  </div>
+
+</body>
+
+<script>
+
+  class Test {
+    number = 1
+    arr = [1, 2, 3]
+  }
+
+  console.log(Object.assign(new Test(), {
+    size: 15,
+    arr: ['a,b;']
+  }))
+
+</script>
+
+</html>
